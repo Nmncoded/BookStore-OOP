@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom styles */
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px;
+}
+
+/* header */
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 12px;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.header h1 span {
+  color: rgba(0, 0, 255, 0.6);
+}
+
+.header p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  padding-bottom: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 48px;
+}
+
+form input {
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+form input:focus {
+  border-top: 2px solid rgba(0, 0, 255, 0.4);
+}
+
+form button {
+  width: 160px;
+  margin: 0 auto;
+  border: 0;
+  background-color: rgba(255, 99, 71, 0.6);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: 550;
+}
+
+/* root-ul */
+.root_ul {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book-card {
+  text-align: center;
+  width: 36%;
+  margin: 24px;
+}
+
+@media screen and (max-width: 568px) {
+  .book-card {
+    width: 90%;
+  }
+}
+
+.book-card div {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.book-card div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.book-card h2, .book-card p, .book-card button {
+  margin-bottom: 16px;
+}
+
+.book-card h2 {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 650;
+}
+
+.book-card p {
+  font-size: 20px;
+}
+
+.book-card button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  border: 0;
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+
+.book-card button:hover {
+  background-color: rgba(255, 99, 71, 0.6);
+}
+
+#color {
+  background-color: rgba(255, 99, 71, 0.6);
+}
+/*# sourceMappingURL=style.css.map */

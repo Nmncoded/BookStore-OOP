@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles */
+
+.container {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 36px;
+}
+
+/* header */
+
+.header {
+    margin-bottom: 24px;
+    h1 {
+        text-align: center;
+        font-size: 54px;
+        margin-bottom: 12px;
+        font-weight: 550;
+        color: rgba(black,0.7);
+        span {
+            color: rgba(blue,0.6);
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 22px;
+        line-height: 1.4;
+        padding-bottom: 24px;
+        color: rgba(black,0.7);
+    }
+}
+form {
+    box-shadow: 0 0 24px 0 rgba(black,0.2);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    input {
+        border: 0;
+        outline: 0;
+        border-radius: 8px;
+        padding: 14px;
+        font-size: 16px;
+        color: rgba(black,0.5);
+        background-color: rgba(black,0.1);
+        margin-bottom: 24px;
+    }
+    input:focus {
+        border-top: 2px solid  rgba(blue,0.4);
+    }
+    button {
+        width: 160px;
+        margin: 0 auto;
+        border: 0;
+        background-color: rgba(tomato,0.6);
+        padding: 12px;
+        border-radius: 8px;
+        color: rgba(white,1);
+        font-size: 24px;
+        font-weight: 550;
+    }
+}
+
+/* root-ul */
+
+.root_ul {
+    padding: 20px;
+    box-shadow: 0 0 24px 0 rgba(black,0.2);
+    border-radius: 12px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.book-card {
+    text-align: center;
+    width: 36%;
+    @media screen and (max-width:568px){
+        width: 90%;
+    }
+    margin: 24px;
+    div {
+        width: 100%;
+        margin-bottom: 16px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    h2, p, button {
+        margin-bottom: 16px;
+    }
+    h2 {
+        font-size: 36px;
+        color: rgba(black,0.7);
+        font-weight: 650;
+    }
+    p {
+        font-size: 20px;
+    }
+    button {
+        background-color: rgba(black,0.7);
+        color: rgba(white,0.9);
+        font-size: 16px;
+        border: 0;
+        border-radius: 16px;
+        padding: 10px 14px;
+        &:hover {
+            background-color: rgba(tomato,0.6);
+        }
+    }
+}
+#color {
+    background-color: rgba(tomato,0.6);
+}
